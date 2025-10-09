@@ -8,6 +8,7 @@
 import MapKit
 import SwiftUI
 
+// Apple Map with markers
 //struct ContentView: View {
 //    @State private var region = MKCoordinateRegion(
 //        center: CLLocationCoordinate2D(latitude: 25.276987, longitude: 55.296249),
@@ -27,7 +28,7 @@ import SwiftUI
 //    }
 //}
 
-
+// Apple Map with HeatMap
 struct ContentView: View {
     let spaces = generateNearbySpaces(count: 100)
 
