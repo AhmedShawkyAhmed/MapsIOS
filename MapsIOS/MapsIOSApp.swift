@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct MapsIOSApp: App {
     
-    @UIApplicationDelegateAdaptor(AppDelegateAdapter.self) var appDelegate
+    @UIApplicationDelegateAdaptor(GoogleMapDelegateAdapter.self) var appDelegate
     
     var body: some Scene {
         WindowGroup {

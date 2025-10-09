@@ -8,7 +8,7 @@
 import SwiftUI
 import MapKit
 
-struct AppleMapView: UIViewRepresentable {
+struct AppleMapMarkers: UIViewRepresentable {
     
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView(frame: .zero)

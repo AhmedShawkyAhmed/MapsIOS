@@ -9,7 +9,7 @@ import SwiftUI
 import GoogleMaps
 import GoogleMapsUtils
 
-struct GoogleHeatmapView: UIViewRepresentable {
+struct GoogleHeatMap: UIViewRepresentable {
     let spaces: [SpaceModel]
     
     func makeCoordinator() -> Coordinator {
@@ -46,10 +46,10 @@ struct GoogleHeatmapView: UIViewRepresentable {
     }
 
     class Coordinator: NSObject, GMSMapViewDelegate {
-        var parent: GoogleHeatmapView
+        var parent: GoogleHeatMap
         private var heatmapLayer: GMUHeatmapTileLayer?
 
-        init(_ parent: GoogleHeatmapView) {
+        init(_ parent: GoogleHeatMap) {
             self.parent = parent
         }
 

@@ -9,7 +9,7 @@
 import SwiftUI
 import MapKit
 
-struct HeatmapView: UIViewRepresentable {
+struct AppleHeatMap: UIViewRepresentable {
     let points: [SpaceModel]
 
     func makeUIView(context: Context) -> MKMapView {

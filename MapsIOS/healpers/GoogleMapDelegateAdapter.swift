@@ -9,7 +9,7 @@
 import SwiftUI
 import GoogleMaps
 
-class AppDelegateAdapter: NSObject, UIApplicationDelegate {
+class GoogleMapDelegateAdapter: NSObject, UIApplicationDelegate {
     
     private let googleMapsAPIKey = "AIzaSyAtHSDd-jAFuhWwxDA1NDHeL2RL3XCLKZY" 
 

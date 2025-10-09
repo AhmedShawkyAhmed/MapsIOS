@@ -53,7 +53,7 @@ struct ContentView: View {
     let spaces = generateNearbySpaces(count: 150)
     
     var body: some View {
-        GoogleHeatmapView(spaces: spaces)
+        GoogleHeatMap(spaces: spaces)
             .ignoresSafeArea()
     }
 }
