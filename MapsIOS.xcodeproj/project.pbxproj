@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		69442CDA2E978FE90083D497 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 69442CD92E978FE90083D497 /* GoogleMaps */; };
+		69442CE32E9795710083D497 /* GoogleMapsUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 69442CE22E9795710083D497 /* GoogleMapsUtils */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69442CE32E9795710083D497 /* GoogleMapsUtils in Frameworks */,
 				69442CDA2E978FE90083D497 /* GoogleMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,6 +128,7 @@
 			name = MapsIOS;
 			packageProductDependencies = (
 				69442CD92E978FE90083D497 /* GoogleMaps */,
+				69442CE22E9795710083D497 /* GoogleMapsUtils */,
 			);
 			productName = MapsIOS;
 			productReference = 69442C742E9784A50083D497 /* MapsIOS.app */;
@@ -211,6 +214,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				69442CB82E978DA60083D497 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+				69442CE12E97955E0083D497 /* XCRemoteSwiftPackageReference "google-maps-ios-utils" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 69442C752E9784A50083D497 /* Products */;
@@ -605,6 +609,14 @@
 				minimumVersion = 10.4.0;
 			};
 		};
+		69442CE12E97955E0083D497 /* XCRemoteSwiftPackageReference "google-maps-ios-utils" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/google-maps-ios-utils";
+			requirement = {
+				kind = exactVersion;
+				version = 6.1.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -612,6 +624,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 69442CB82E978DA60083D497 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
 			productName = GoogleMaps;
+		};
+		69442CE22E9795710083D497 /* GoogleMapsUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69442CE12E97955E0083D497 /* XCRemoteSwiftPackageReference "google-maps-ios-utils" */;
+			productName = GoogleMapsUtils;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

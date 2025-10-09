@@ -13,9 +13,8 @@ struct AppleMapView: UIViewRepresentable {
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView(frame: .zero)
         
-        // 🌍 Center map on (0,0) with a wide span to show the whole world
         let worldRegion = MKCoordinateRegion(
-            center: CLLocationCoordinate2D(latitude: 0, longitude: 0),
+            center: CLLocationCoordinate2D(latitude: baseLat, longitude: baseLng),
             span: MKCoordinateSpan(latitudeDelta: 140, longitudeDelta: 360)
         )
         mapView.setRegion(worldRegion, animated: false)

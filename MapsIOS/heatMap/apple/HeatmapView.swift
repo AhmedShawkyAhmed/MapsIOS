@@ -16,13 +16,11 @@ struct HeatmapView: UIViewRepresentable {
         let mapView = MKMapView()
         mapView.delegate = context.coordinator
 
-        if let first = points.first {
-            let region = MKCoordinateRegion(
-                center: CLLocationCoordinate2D(latitude: first.lat, longitude: first.lng),
-                span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
-            )
-            mapView.setRegion(region, animated: false)
-        }
+        let worldRegion = MKCoordinateRegion(
+            center: CLLocationCoordinate2D(latitude: baseLat, longitude: baseLng),
+            span: MKCoordinateSpan(latitudeDelta: 140, longitudeDelta: 360)
+        )
+        mapView.setRegion(worldRegion, animated: false)
 
         context.coordinator.updateOverlays(on: mapView)
         return mapView

@@ -8,13 +8,13 @@
 import SwiftUI
 import GoogleMaps
 
-struct GoogleMapView: UIViewRepresentable {
+struct GoogleMapMarkers: UIViewRepresentable {
     
     let spaces: [SpaceModel]
     
     private let initialCameraPosition = GMSCameraPosition(
-        latitude: 25.276987,
-        longitude: 55.296249,
+        latitude: baseLat,
+        longitude: baseLng,
         zoom: 12.0
     )
 
@@ -36,21 +36,14 @@ struct GoogleMapView: UIViewRepresentable {
         // It's usually best to remove this line or set a proper range (e.g., 1.0 to 20.0).
         // mapView.setMinZoom(1.0, maxZoom: 1.0)
         
-        // 2. Loop through the data and create a marker for each space
         for space in spaces {
             let marker = GMSMarker()
             marker.position = CLLocationCoordinate2D(latitude: space.lat, longitude: space.lng)
             
-            // Set the marker title and snippet using your SpaceModel data
             marker.title = space.name
             marker.snippet = "Price: \(space.price), Distance: \(space.distance)"
             
-            // Assign the marker to the map
             marker.map = mapView
-            
-            // Optional: You can attach the whole SpaceModel object to the marker
-            // for later use (e.g., in a delegate method)
-            // marker.userData = space
         }
         
         return mapView

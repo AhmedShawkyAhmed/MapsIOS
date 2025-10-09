@@ -38,15 +38,26 @@ import SwiftUI
 //    }
 //}
 
-// Google Maps
+// Google Maps with markers
+//struct ContentView: View {
+//    let nearbySpaces = generateNearbySpaces(count: 100)
+//        
+//    var body: some View {
+//        GoogleMapMarkers(spaces: nearbySpaces)
+//            .edgesIgnoringSafeArea(.all)
+//    }
+//}
+
+// Google Maps with HeatMap
 struct ContentView: View {
-    let nearbySpaces = generateNearbySpaces(count: 100)
-        
+    let spaces = generateNearbySpaces(count: 150)
+    
     var body: some View {
-        GoogleMapView(spaces: nearbySpaces)
-            .edgesIgnoringSafeArea(.all)
+        GoogleHeatmapView(spaces: spaces)
+            .ignoresSafeArea()
     }
 }
+
 
 #Preview {
     ContentView()
