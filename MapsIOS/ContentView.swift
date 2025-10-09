@@ -29,12 +29,22 @@ import SwiftUI
 //}
 
 // Apple Map with HeatMap
-struct ContentView: View {
-    let spaces = generateNearbySpaces(count: 100)
+//struct ContentView: View {
+//    let spaces = generateNearbySpaces(count: 100)
+//
+//    var body: some View {
+//        HeatmapView(points: spaces)
+//            .ignoresSafeArea()
+//    }
+//}
 
+// Google Maps
+struct ContentView: View {
+    let nearbySpaces = generateNearbySpaces(count: 100)
+        
     var body: some View {
-        HeatmapView(points: spaces)
-            .ignoresSafeArea()
+        GoogleMapView(spaces: nearbySpaces)
+            .edgesIgnoringSafeArea(.all)
     }
 }
 
