@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		69442CDA2E978FE90083D497 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 69442CD92E978FE90083D497 /* GoogleMaps */; };
 		69442CE32E9795710083D497 /* GoogleMapsUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 69442CE22E9795710083D497 /* GoogleMapsUtils */; };
+		69442CF12E97B0D20083D497 /* SVGView in Frameworks */ = {isa = PBXBuildFile; productRef = 69442CF02E97B0D20083D497 /* SVGView */; };
+		69442CF32E97B1FE0083D497 /* world-map.svg in Resources */ = {isa = PBXBuildFile; fileRef = 69442CF22E97B1FE0083D497 /* world-map.svg */; };
+		69442CF82E97BA0E0083D497 /* Macaw in Frameworks */ = {isa = PBXBuildFile; productRef = 69442CF72E97BA0E0083D497 /* Macaw */; };
+		69442CFA2E97C1C10083D497 /* world-map.png in Resources */ = {isa = PBXBuildFile; fileRef = 69442CF92E97C1C10083D497 /* world-map.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,8 @@
 		69442C742E9784A50083D497 /* MapsIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapsIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69442C812E9784A60083D497 /* MapsIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapsIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69442C8B2E9784A60083D497 /* MapsIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapsIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69442CF22E97B1FE0083D497 /* world-map.svg */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "world-map.svg"; sourceTree = "<group>"; };
+		69442CF92E97C1C10083D497 /* world-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "world-map.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -57,7 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69442CF12E97B0D20083D497 /* SVGView in Frameworks */,
 				69442CE32E9795710083D497 /* GoogleMapsUtils in Frameworks */,
+				69442CF82E97BA0E0083D497 /* Macaw in Frameworks */,
 				69442CDA2E978FE90083D497 /* GoogleMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +90,8 @@
 		69442C6B2E9784A50083D497 = {
 			isa = PBXGroup;
 			children = (
+				69442CF92E97C1C10083D497 /* world-map.png */,
+				69442CF22E97B1FE0083D497 /* world-map.svg */,
 				69442C762E9784A50083D497 /* MapsIOS */,
 				69442C842E9784A60083D497 /* MapsIOSTests */,
 				69442C8E2E9784A60083D497 /* MapsIOSUITests */,
@@ -129,6 +139,8 @@
 			packageProductDependencies = (
 				69442CD92E978FE90083D497 /* GoogleMaps */,
 				69442CE22E9795710083D497 /* GoogleMapsUtils */,
+				69442CF02E97B0D20083D497 /* SVGView */,
+				69442CF72E97BA0E0083D497 /* Macaw */,
 			);
 			productName = MapsIOS;
 			productReference = 69442C742E9784A50083D497 /* MapsIOS.app */;
@@ -215,6 +227,8 @@
 			packageReferences = (
 				69442CB82E978DA60083D497 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
 				69442CE12E97955E0083D497 /* XCRemoteSwiftPackageReference "google-maps-ios-utils" */,
+				69442CED2E97B0420083D497 /* XCRemoteSwiftPackageReference "SVGView" */,
+				69442CF62E97BA050083D497 /* XCRemoteSwiftPackageReference "Macaw" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 69442C752E9784A50083D497 /* Products */;
@@ -233,6 +247,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69442CF32E97B1FE0083D497 /* world-map.svg in Resources */,
+				69442CFA2E97C1C10083D497 /* world-map.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +633,22 @@
 				version = 6.1.3;
 			};
 		};
+		69442CED2E97B0420083D497 /* XCRemoteSwiftPackageReference "SVGView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/SVGView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.6;
+			};
+		};
+		69442CF62E97BA050083D497 /* XCRemoteSwiftPackageReference "Macaw" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/Macaw.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.10;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -629,6 +661,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 69442CE12E97955E0083D497 /* XCRemoteSwiftPackageReference "google-maps-ios-utils" */;
 			productName = GoogleMapsUtils;
+		};
+		69442CF02E97B0D20083D497 /* SVGView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69442CED2E97B0420083D497 /* XCRemoteSwiftPackageReference "SVGView" */;
+			productName = SVGView;
+		};
+		69442CF72E97BA0E0083D497 /* Macaw */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69442CF62E97BA050083D497 /* XCRemoteSwiftPackageReference "Macaw" */;
+			productName = Macaw;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

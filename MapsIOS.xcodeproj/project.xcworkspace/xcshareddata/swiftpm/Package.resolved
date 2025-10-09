@@ -1,5 +1,5 @@
 {
-  "originHash" : "bb0d3d038e4cffe3f69e43609ea59015564de317c77895b8f6b95762d9ac1559",
+  "originHash" : "8b6f946a351c59643cb240f1d1379a3903d7fb7aa3d75a30c6df200c1dd10b8d",
   "pins" : [
     {
       "identity" : "google-maps-ios-utils",
@@ -17,6 +17,33 @@
       "state" : {
         "revision" : "e4c8ab764c05a7e50501f8f7b35a1f8b45203da2",
         "version" : "10.4.0"
+      }
+    },
+    {
+      "identity" : "macaw",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/exyte/Macaw.git",
+      "state" : {
+        "revision" : "29ec199cbc9c814f8ceffc1a33b8775b7349dcdd",
+        "version" : "0.9.10"
+      }
+    },
+    {
+      "identity" : "svgview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/exyte/SVGView",
+      "state" : {
+        "revision" : "6465962facdd25cb96eaebc35603afa2f15d2c0d",
+        "version" : "1.0.6"
+      }
+    },
+    {
+      "identity" : "swxmlhash",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/drmohundro/SWXMLHash",
+      "state" : {
+        "revision" : "6469881a3f30417c5bb02404ea4b69207f297592",
+        "version" : "6.0.0"
       }
     }
   ],
