@@ -48,7 +48,7 @@ struct AppleHeatMap: UIViewRepresentable {
 
             for point in points {
                 let coord = CLLocationCoordinate2D(latitude: point.lat, longitude: point.lng)
-                let radius = radiusForZoom(mapView) * point.weight
+                let radius = radiusForZoom(mapView)
                 let circle = MKCircle(center: coord, radius: radius)
                 mapView.addOverlay(circle)
             }
@@ -62,15 +62,15 @@ struct AppleHeatMap: UIViewRepresentable {
             guard let circle = overlay as? MKCircle else { return MKOverlayRenderer() }
 
             // Find the matching point
-            guard let point = points.first(where: {
+            guard points.first(where: {
                 abs($0.lat - circle.coordinate.latitude) < 0.0001 &&
                 abs($0.lng - circle.coordinate.longitude) < 0.0001
-            }) else {
+            }) != nil else {
                 return MKOverlayRenderer()
             }
 
             let renderer = MKCircleRenderer(circle: circle)
-            renderer.fillColor = heatColor(for: point.weight)
+            renderer.fillColor = heatColor(for: 1.0)
             renderer.alpha = 0.5
             return renderer
         }

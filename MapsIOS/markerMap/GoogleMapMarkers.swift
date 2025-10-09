@@ -40,8 +40,7 @@ struct GoogleMapMarkers: UIViewRepresentable {
             let marker = GMSMarker()
             marker.position = CLLocationCoordinate2D(latitude: space.lat, longitude: space.lng)
             
-            marker.title = space.name
-            marker.snippet = "Price: \(space.price), Distance: \(space.distance)"
+            marker.title = "Map Title"
             
             marker.map = mapView
         }

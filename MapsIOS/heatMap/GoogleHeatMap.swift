@@ -84,7 +84,7 @@ struct GoogleHeatMap: UIViewRepresentable {
         private func convertDataToPoints(_ data: [SpaceModel]) -> [GMUWeightedLatLng] {
             return data.map {
                 let coordinate = CLLocationCoordinate2D(latitude: $0.lat, longitude: $0.lng)
-                return GMUWeightedLatLng(coordinate: coordinate, intensity: Float($0.weight))
+                return GMUWeightedLatLng(coordinate: coordinate, intensity: Float(1.0))
             }
         }
 
