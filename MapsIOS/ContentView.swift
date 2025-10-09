@@ -5,17 +5,35 @@
 //  Created by Ahmed Shawky on 09/10/2025.
 //
 
+import MapKit
 import SwiftUI
 
+//struct ContentView: View {
+//    @State private var region = MKCoordinateRegion(
+//        center: CLLocationCoordinate2D(latitude: 25.276987, longitude: 55.296249),
+//        span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
+//    )
+//
+//    let spaces = generateNearbySpaces()
+//
+//    var body: some View {
+//        Map(coordinateRegion: $region, annotationItems: spaces) { space in
+//            MapMarker(
+//                coordinate: CLLocationCoordinate2D(latitude: space.lat, longitude: space.lng),
+//                tint: .blue
+//            )
+//        }
+//        .ignoresSafeArea()
+//    }
+//}
+
+
 struct ContentView: View {
+    let spaces = generateNearbySpaces(count: 100)
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        HeatmapView(points: spaces)
+            .ignoresSafeArea()
     }
 }
 
