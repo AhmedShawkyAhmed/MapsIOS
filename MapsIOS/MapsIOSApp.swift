@@ -17,7 +17,8 @@ struct MapsIOSApp: App {
             //    AppleMapMarkersContentView()
             //    AppleHeatMapContentView()
             //    GoogleMapMarkerContentView()
-                GoogleHeatMapContentView()
+//                GoogleHeatMapContentView()
+            InteractiveMapContentView()
         }
     }
 }

@@ -57,3 +57,11 @@ struct GoogleHeatMapContentView: View {
             .ignoresSafeArea()
     }
 }
+
+
+// Interactive SVG Map
+struct InteractiveMapContentView: View {
+    var body: some View {
+        InteractiveWorldMap()
+    }
+}
