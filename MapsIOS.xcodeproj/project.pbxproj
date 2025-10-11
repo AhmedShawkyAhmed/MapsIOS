@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69025E332E9AB05A00E8E838 /* Script.sh in Resources */ = {isa = PBXBuildFile; fileRef = 69025E322E9AB04D00E8E838 /* Script.sh */; };
 		69442CDA2E978FE90083D497 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 69442CD92E978FE90083D497 /* GoogleMaps */; };
 		69442CE32E9795710083D497 /* GoogleMapsUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 69442CE22E9795710083D497 /* GoogleMapsUtils */; };
 		69442CF12E97B0D20083D497 /* SVGView in Frameworks */ = {isa = PBXBuildFile; productRef = 69442CF02E97B0D20083D497 /* SVGView */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69025E322E9AB04D00E8E838 /* Script.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Script.sh; sourceTree = "<group>"; };
 		69442C742E9784A50083D497 /* MapsIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapsIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69442C812E9784A60083D497 /* MapsIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapsIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69442C8B2E9784A60083D497 /* MapsIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapsIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +92,7 @@
 		69442C6B2E9784A50083D497 = {
 			isa = PBXGroup;
 			children = (
+				69025E322E9AB04D00E8E838 /* Script.sh */,
 				69442CF92E97C1C10083D497 /* world-map.png */,
 				69442CF22E97B1FE0083D497 /* world-map.svg */,
 				69442C762E9784A50083D497 /* MapsIOS */,
@@ -249,6 +252,7 @@
 			files = (
 				69442CF32E97B1FE0083D497 /* world-map.svg in Resources */,
 				69442CFA2E97C1C10083D497 /* world-map.png in Resources */,
+				69025E332E9AB05A00E8E838 /* Script.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
