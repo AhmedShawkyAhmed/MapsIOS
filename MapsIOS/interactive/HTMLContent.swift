@@ -28,13 +28,14 @@ func createHTMLContent(with svgContent: String) -> String {
                 box-sizing: border-box;
                 -webkit-user-select: none;
                 user-select: none;
+                -webkit-tap-highlight-color: transparent;
+                touch-action: auto;
             }
             
             body {
                 background: #f5f5f5;
-                overflow: auto;
+                overflow: hidden;
                 font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-                touch-action: manipulation;
             }
             
             #map-container {
@@ -62,13 +63,6 @@ func createHTMLContent(with svgContent: String) -> String {
                 transition: all 0.2s ease;
             }
             
-            /* Hover effect - light blue */
-            path:hover {
-                fill: #87ceeb !important;
-                stroke: #4682b4;
-                stroke-width: 1;
-            }
-            
             /* Selected state - dark blue */
             path.selected {
                 fill: #1e3a8a !important;
@@ -76,10 +70,13 @@ func createHTMLContent(with svgContent: String) -> String {
                 stroke-width: 1.5;
             }
             
+    
             /* Active/pressed state */
+            /*
             path:active {
-                fill: #1e40af !important;
+                fill: #1e4000 !important;
             }
+            */
             
             circle {
                 display: none;

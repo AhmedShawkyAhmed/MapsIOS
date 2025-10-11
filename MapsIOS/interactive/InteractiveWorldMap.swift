@@ -18,3 +18,7 @@ struct InteractiveWorldMap: View {
                 .ignoresSafeArea()
     }
 }
+
+#Preview {
+    InteractiveWorldMap()
+}
