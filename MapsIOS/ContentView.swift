@@ -11,11 +11,11 @@ import SwiftUI
 // Apple Map with markers
 struct AppleMapMarkersContentView: View {
     @State private var region = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 25.276987, longitude: 55.296249),
+        center: CLLocationCoordinate2D(latitude: baseLat, longitude: baseLng),
         span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
     )
 
-    let spaces = generateNearbySpaces()
+    let spaces = generateNearbySpaces(count: 100)
 
     var body: some View {
         Map(coordinateRegion: $region, annotationItems: spaces) { space in

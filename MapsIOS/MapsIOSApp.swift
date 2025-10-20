@@ -14,9 +14,9 @@ struct MapsIOSApp: App {
     
     var body: some Scene {
         WindowGroup {
-            //    AppleMapMarkersContentView()
-            //    AppleHeatMapContentView()
-            //    GoogleMapMarkerContentView()
+//                AppleMapMarkersContentView()
+//                AppleHeatMapContentView()
+//                GoogleMapMarkerContentView()
 //                GoogleHeatMapContentView()
             InteractiveMapContentView()
         }
