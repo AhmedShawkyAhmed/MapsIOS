@@ -9,8 +9,8 @@ import Foundation
 import CoreLocation
 
 
-let baseLat = 25.276987
-let baseLng = 55.296249
+let baseLat = 36.05347607640812
+let baseLng = -86.89627345272007
 
 struct SpaceModel: Identifiable {
     let id = UUID()
