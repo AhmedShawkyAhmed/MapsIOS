@@ -4,20 +4,20 @@
 
 | Apple Map                                                 | Google Map                                               |
 |-----------------------------------------------------------|----------------------------------------------------------|
-| <img src="Images/iPhone/apple_map.png" width="350">       | <img src="Images/iPhone/google_map.png" width="350">     |
+| <img src="Images/iPhone/apple_map.png" width="400">       | <img src="Images/iPhone/google_map.png" width="400">     |
 
 | Google Heat Map                                           | Interactive Map                                          |
 |-----------------------------------------------------------|----------------------------------------------------------|
-| <img src="Images/iPhone/google_heat_map.png" width="350"> | <img src="Images/iPhone/interactive_map.png" width="350">|
+| <img src="Images/iPhone/google_heat_map.png" width="400"> | <img src="Images/iPhone/interactive_map.png" width="400">|
 
 
 # iPad
 
 | Apple Map                                                 | Google Map                                               |
 |-----------------------------------------------------------|----------------------------------------------------------|
-| <img src="Images/iPad/apple_map.png" width="350">         | <img src="Images/iPad/google_map.png" width="350">       |
+| <img src="Images/iPad/apple_map.png" width="400">         | <img src="Images/iPad/google_map.png" width="400">       |
 
 | Google Heat Map                                           | Interactive Map                                          |
 |-----------------------------------------------------------|----------------------------------------------------------|
-| <img src="Images/iPad/google_heat_map.png" width="350">   | <img src="Images/iPad/interactive_map.png" width="350">  |
+| <img src="Images/iPad/google_heat_map.png" width="400">   | <img src="Images/iPad/interactive_map.png" width="400">  |
  
